@@ -41,7 +41,7 @@ public class JsonProducer
 	 }
 	   private static String generateJsontemp()
 	   {
-		      	JSONObject tuple = new JSONObject();
+		      JSONObject tuple = new JSONObject();
 		    	tempsensor_ID= rnd.nextInt(100);
 		    	temp=rnd.nextInt(1000);
 		    	tuple.put("tempsensor_ID", tempsensor_ID);

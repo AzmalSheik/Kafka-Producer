@@ -1,3 +1,11 @@
 place kafka producer jar in kafka libs folder
+
+Create a kafka topic:
+kafka-topics.sh --create --zookeeper ems.winext.com:2181 --replication-factor 1 --partitions 2 --topic sensor-data
+
 start kafka producer:
 ./kafka-run-class.sh producer.JsonProducer
+
+To view realtime streaming data you can use following command (optional) :
+
+./kafka-console-consumer.sh --zookeeper ems.winext.com:2181 --topic sensor-data 
